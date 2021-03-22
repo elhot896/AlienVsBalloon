@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class ShipMovement : MonoBehaviour
 {
-
+    private Rigidbody2D rb;
     bool ifTouched;
+
     // Start is called before the first frame update
     void Start()
     {
-       
-        
+        rb = GetComponent<Rigidbody2D>();
     }
 
+    /*
     // Update is called once per frame
     void Update()
     {
@@ -39,5 +40,12 @@ public class ShipMovement : MonoBehaviour
                 ifTouched = false;
             }
         }
+    }*/
+
+    public void GoingUp()
+    {
+
+        rb.AddForce(transform.right * 73f);
+        
     }
 }

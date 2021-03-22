@@ -7,6 +7,6 @@ public class Jump : MonoBehaviour
 {
     public void ButtonClicked()
     {
-        Console.WriteLine("Clicked");
+        print("Clicked");
     }
 }
