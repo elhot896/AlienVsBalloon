@@ -9,6 +9,7 @@ public class ShipMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       
         
     }
 
@@ -29,7 +30,7 @@ public class ShipMovement : MonoBehaviour
             {
                 if (ifTouched)
                 {
-                    transform.position = new Vector2(0, touchposition.y);
+                    transform.position = new Vector2(6.24f, touchposition.y);
                 }
             }
 
